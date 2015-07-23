@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XWCycleScrollView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableArray *views = [NSMutableArray array];
+    for (NSUInteger i = 0; i < 10; i++) {
+        UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)];
+        view.backgroundColor = [UIColor XW_RANDOM_COLOR];
+        [views addObject:view];
+    }
+    XWCycleScrollView *xwCycleView = [[XWCycleScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 200)
+                                                             xwCycleDirection:XWCycleDirectionVertical
+                                                                     withView:views];
+    xwCycleView.backgroundColor = [UIColor XW_RANDOM_COLOR];
+    [self.view addSubview:xwCycleView];
 }
 
 - (void)didReceiveMemoryWarning {

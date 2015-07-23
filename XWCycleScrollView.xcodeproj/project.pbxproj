@@ -14,6 +14,7 @@
 		76017FD41B61181C00B72490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76017FD31B61181C00B72490 /* Images.xcassets */; };
 		76017FD71B61181C00B72490 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76017FD51B61181C00B72490 /* LaunchScreen.xib */; };
 		76017FE31B61181C00B72490 /* XWCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76017FE21B61181C00B72490 /* XWCycleScrollViewTests.m */; };
+		76017FEF1B61189200B72490 /* XWCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76017FEE1B61189200B72490 /* XWCycleScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		76017FDC1B61181C00B72490 /* XWCycleScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XWCycleScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76017FE11B61181C00B72490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76017FE21B61181C00B72490 /* XWCycleScrollViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWCycleScrollViewTests.m; sourceTree = "<group>"; };
+		76017FED1B61189200B72490 /* XWCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCycleScrollView.h; sourceTree = "<group>"; };
+		76017FEE1B61189200B72490 /* XWCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCycleScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		76017FC51B61181C00B72490 /* XWCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				76017FEC1B61186700B72490 /* XWCycleScrollView */,
 				76017FCA1B61181C00B72490 /* AppDelegate.h */,
 				76017FCB1B61181C00B72490 /* AppDelegate.m */,
 				76017FCD1B61181C00B72490 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				76017FE11B61181C00B72490 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76017FEC1B61186700B72490 /* XWCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				76017FED1B61189200B72490 /* XWCycleScrollView.h */,
+				76017FEE1B61189200B72490 /* XWCycleScrollView.m */,
+			);
+			path = XWCycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				76017FCF1B61181C00B72490 /* ViewController.m in Sources */,
 				76017FCC1B61181C00B72490 /* AppDelegate.m in Sources */,
 				76017FC91B61181C00B72490 /* main.m in Sources */,
+				76017FEF1B61189200B72490 /* XWCycleScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
